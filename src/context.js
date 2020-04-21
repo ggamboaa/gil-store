@@ -7,15 +7,29 @@ const ProductContext = React.createContext();
 
 export default class ProductProvider extends Component {
   state = {
-    products: storeProducts,
+    products: [],
     detailProduct: detailProduct,
   };
+  componentDidMount() {
+    this.setProducts();
+  }
+  setProducts = () => {
+    let tempProducts = [];
+    storeProducts.forEach((item) => {
+      const singleItem = { ...item };
+      tempProducts = [...tempProducts, singleItem];
+    });
+    this.setState(() => {
+      return { products: tempProducts };
+    });
+  };
+
   render() {
     this.handleDetail = () => {
       console.log("Detail");
     };
-    this.addToCart = () => {
-      console.log("Add to cart");
+    this.addToCart = (id) => {
+      console.log(`The cart.id is ${id}`);
     };
     return (
       <ProductContext.Provider
