@@ -109,7 +109,7 @@ export const storeProducts = [
   },
   {
     id: 10,
-    title: "Esencia para baño de Enebro",
+    title: "Esencia para baño de Enebro ",
     img: "img/product-101.png",
     price: 7000,
     company: "Just",
