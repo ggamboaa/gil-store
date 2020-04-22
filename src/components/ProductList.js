@@ -11,7 +11,7 @@ export default class ProductList extends Component {
         {/* 16*: 5=3, 4=1.5, 3=16, 2=.5, 1=.25, 0=0 */}
         <div className="py-5">
           <div className="container">
-            <Title name="our" title="products" />
+            <Title name="nena" title="store" />
             <div className="row">
               <ProductConsumer>
                 {/* Return the value that's on ProductContext.Provider */}
