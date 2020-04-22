@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 // import { ProductConsumer } from "../context";
+// import Details from './Details';
 
 export default class Product extends Component {
   render() {
@@ -11,10 +12,17 @@ export default class Product extends Component {
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
           <div
-            className="img-container p-5"
+            className="img-container p-4"
             onClick={() => console.log("You clicked me on image container!")}
           >
             <Link to="/details">
+            {/* <ProductConsumer>
+                {(value) => {
+                  return value.products.detailProduct.map((detail) => {
+                    return <Details key={detail.id} detail={detail}/>;
+                  });
+                }}
+              </ProductConsumer> */}
               <img src={img} alt="product" className="card-img-top" />
             </Link>
             <button
@@ -38,7 +46,7 @@ export default class Product extends Component {
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
             <h5 className="text-blue font-italic mb-0">
-              <span className="mr-1">$</span>
+              <span className="mr-1">¢</span>
               {price}
             </h5>
           </div>
@@ -67,6 +75,7 @@ const ProductWrapper = styled.div`
     background: transparent;
     border-top: transparent;
     transition: all 1s linear;
+    height: 3rem;
   }
   &:hover {
     .card {
