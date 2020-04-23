@@ -27,7 +27,7 @@ export const storeProducts = [
     id: 3,
     title: "Crema de Enebro",
     img: "img/product-3.png",
-    price: 7000,
+    price: 15000,
     company: "Just",
     info:
       "El calor y los masajes son la recomendación más antigua para aflojar las tensiones musculares y las molestias que éstas producen a raíz de problemas de contracturas, postura o de la actividad misma. Un masaje con Crema de Enebro relaja los músculos, facilita el movimiento de personas mayores y también, por su acción calorífica, ayuda a preparar el cuerpo antes de los deportes y la actividad física.",
@@ -75,7 +75,7 @@ export const storeProducts = [
     id: 7,
     title: "Bálsamo Corporal",
     img: "img/product-7.png",
-    price: 7000,
+    price: 10000,
     company: "Just",
     info:
       "Una fricción vigorizante estimula la circulación evitando la formación de moretones y hematomas. Esta combinación de extracto de árnica junto a exquisitos ingredientes activos naturales, protege de agresiones externas reconfortando las molestias causadas por golpes y picaduras de insectos. Ideal para niños, propensos a golpearse y formar moretones.",
@@ -87,7 +87,7 @@ export const storeProducts = [
     id: 8,
     title: "Aceite Esencial de Limón",
     img: "img/product-8.png",
-    price: 7000,
+    price: 8000,
     company: "Just",
     info:
       "El aroma penetrante del Aceite Esencial de Limón se hace presente para liberar la energía bloqueada y estimular la creatividad y la concentración. Aparece como una bocanada de aire fresco, cítrico e inspirador dejando tras su paso alegría positiva, sonrisas, buen humor y ganas de hacer.",
@@ -99,7 +99,7 @@ export const storeProducts = [
     id: 9,
     title: "Anti-Stress",
     img: "img/product-9.png",
-    price: 7000,
+    price: 10000,
     company: "Just",
     info:
       "Una sinergia particular y equilibrada de 15 aceites esenciales naturales combinados para brindar una sensación única de bienestar y relajación que permite afrontar los momentos de alto estrés de manera armónica. Una suave fricción detrás de las orejas, en la nuca o las muñecas te permiten disfrutar de sus beneficios. También usándolo en un baño de inmersión, en el sauna o en el hornillo de aromaterapia podrás apreciar plenamente sus vapores tranquilizantes.",
@@ -121,7 +121,7 @@ export const storeProducts = [
   },
 ];
 
-export const detailProduct = [
+export const detailProduct =
   {
     id: 1,
     code: "4110",
@@ -134,7 +134,7 @@ export const detailProduct = [
     inCart: false,
     count: 0,
     total: 0,
-  },
+  }
   // {
   //   id: 2,
   //   code: "1016",
@@ -250,4 +250,4 @@ export const detailProduct = [
   //   count: 0,
   //   total: 0,
   // },
-];
+// ];
